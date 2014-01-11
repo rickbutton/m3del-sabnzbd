@@ -1,0 +1,33 @@
+{
+  "name": "m3del-sabnzbd",
+  "version": "0.1.2",
+  "source": "https://github.com/nctiggy/m3del-sabnzbd",
+  "author": "m3del",
+  "license": "Apache License, Version 2.0",
+  "summary": "This module will maintain a full sabnzbd install and config",
+  "description": "Only tested in Ubuntu. puppetlabs/apt dependancy is to add the custom repo.",
+  "project_page": "https://github.com/nctiggy/m3del-sabnzbd",
+  "dependencies": [
+    {
+      "name": "puppetlabs/apt"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "c317711c152d2be18020a3a8c8d36586",
+    "README.md": "ea80041c322ac898291fcb9ad30dab7d",
+    "Vagrantfile": "06e8b31434a2c6bb56bebcc8453dd875",
+    "bootstrap.sh": "288d8c527019632c6b5a95f9cef2a0a7",
+    "manifests/config.pp": "6599971faf4770f3bdbd7497f4f5aa9b",
+    "manifests/init.pp": "84ccf9cd9902d8faadfe946973ed880b",
+    "manifests/install.pp": "09caa576b8073f65d839b5e1652a9dd6",
+    "manifests/params.pp": "4416b773f5080b0e69bff9dcad3175b3",
+    "manifests/service.pp": "92dfae5e3461405168c889abf52d5b8e",
+    "puppet": "a5d31c8b0582b533e39dcaac8a29ffdb",
+    "puppet.conf": "10bf0e0a28a1ee46c193c98d37d64d84",
+    "templates/sabnzbd.ini.erb": "f3557bedfb9e7418fe440dc3f9997943",
+    "templates/sabnzbdplus.erb": "d8a540d2b5b6774ab9c103ddced50cd4"
+  }
+}
