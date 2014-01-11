@@ -1,4 +1,5 @@
 class sabnzbd::install inherits sabnzbd {
+	include apt
 	apt::ppa { 'ppa:jcfp/ppa': }
 	
     package { 'sabnzbdplus':
