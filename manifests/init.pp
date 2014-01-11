@@ -1,19 +1,19 @@
 class m3del-sabnzbd (
-	$user_name			= $sabnzbd::params::user_name,
-	$download_dir		= $sabnzbd::params::download_dir,
-	$complete_dir		= $sabnzbd::params::complete_dir,
-	$api_key			= $sabnzbd::params::api_key,
-	$script_dir			= $sabnzbd::params::script_dir,
-	$usenet_server		= $sabnzbd::params::usenet_server,
-	$usenet_user		= $sabnzbd::params::usenet_user,
-	$usenet_password	= $sabnzbd::params::usenet_password,
-	$usenet_connections = $sabnzbd::params::usenet_connections,
-	$usenet_ssl			= $sabnzbd::params::usenet_ssl,
-	$usenet_port		= $sabnzbd::params::usenet_port,
-	$movie_script		= $sabnzbd::params::movie_script,
-	$movie_location		= $sabnzbd::params::movie_location,
-	$tv_script			= $sabnzbd::params::tv_script
-) inherits sabnzbd::params {
+	$user_name			= $m3del-sabnzbd::params::user_name,
+	$download_dir		= $m3del-sabnzbd::params::download_dir,
+	$complete_dir		= $m3del-sabnzbd::params::complete_dir,
+	$api_key			= $m3del-sabnzbd::params::api_key,
+	$script_dir			= $m3del-sabnzbd::params::script_dir,
+	$usenet_server		= $m3del-sabnzbd::params::usenet_server,
+	$usenet_user		= $m3del-sabnzbd::params::usenet_user,
+	$usenet_password	= $m3del-sabnzbd::params::usenet_password,
+	$usenet_connections = $m3del-sabnzbd::params::usenet_connections,
+	$usenet_ssl			= $m3del-sabnzbd::params::usenet_ssl,
+	$usenet_port		= $m3del-sabnzbd::params::usenet_port,
+	$movie_script		= $m3del-sabnzbd::params::movie_script,
+	$movie_location		= $m3del-sabnzbd::params::movie_location,
+	$tv_script			= $m3del-sabnzbd::params::tv_script
+) inherits m3del-sabnzbd::params {
 
 	validate_string($user_name)
 	validate_absolute_path($download_dir)
