@@ -9,4 +9,4 @@ project_page 'https://github.com/nctiggy/m3del-sabnzbd'
 
 ## Add dependencies, if any:
 # dependency 'username/name', '>= 1.2.0'
-dependancy 'puppetlabs/apt'
+dependency 'puppetlabs/apt'
