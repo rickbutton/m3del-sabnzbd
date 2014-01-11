@@ -1,5 +1,5 @@
 name    'm3del-sabnzbd'
-version '0.1.1'
+version '0.1.2'
 source 'https://github.com/nctiggy/m3del-sabnzbd'
 author 'm3del'
 license 'Apache License, Version 2.0'
