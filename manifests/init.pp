@@ -1,4 +1,4 @@
-class sabnzbd (
+class m3del-sabnzbd (
 	$user_name			= $sabnzbd::params::user_name,
 	$download_dir		= $sabnzbd::params::download_dir,
 	$complete_dir		= $sabnzbd::params::complete_dir,
@@ -30,12 +30,12 @@ class sabnzbd (
 	validate_absolute_path($movie_location)
 	validate_string($tv_script)
 	
-	anchor { 'sabnzbd::begin': } ->
-	class { 'sabnzbd::install': } ->
-	class { 'sabnzbd::config': 
-		notify => Class['sabnzbd::service'],
+	anchor { 'm3del-sabnzbd::begin': } ->
+	class { 'm3del-sabnzbd::install': } ->
+	class { 'm3del-sabnzbd::config': 
+		notify => Class['m3del-sabnzbd::service'],
 	} ->
-	class { 'sabnzbd::service': } ->
-	anchor { 'sabnzbd::end': }
+	class { 'm3del-sabnzbd::service': } ->
+	anchor { 'm3del-sabnzbd::end': }
 	
 }

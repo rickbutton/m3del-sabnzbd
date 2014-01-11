@@ -1,4 +1,4 @@
-name    'sabnzbd'
+name    'm3del-sabnzbd'
 version '0.1.0'
 source 'UNKNOWN'
 author 'm3del'

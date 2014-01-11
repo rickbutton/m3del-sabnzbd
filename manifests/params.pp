@@ -1,7 +1,7 @@
 # Class: sabnzbd::params
 #
 #
-class sabnzbd::params {
+class m3del-sabnzbd::params {
 	$user_name			= ''
 	$download_dir		= "/home/${user_name}/storage/incomplete"
 	$complete_dir		= "/home/${user_name}/storage/complete"

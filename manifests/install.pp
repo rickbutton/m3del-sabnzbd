@@ -1,4 +1,4 @@
-class sabnzbd::install inherits sabnzbd {
+class m3del-sabnzbd::install inherits sabnzbd {
 	apt::ppa { 'ppa:jcfp/ppa': }
 	
     package { 'sabnzbdplus':
