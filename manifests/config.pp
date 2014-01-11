@@ -1,4 +1,4 @@
-class m3del-sabnzbd::config inherits sabnzbd {
+class sabnzbd::config inherits sabnzbd {
 
     file { 'sabnzbd.ini':
       path => "/home/${user_name}/.sabnzbd/sabnzbd.ini",
