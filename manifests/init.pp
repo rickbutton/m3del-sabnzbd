@@ -27,6 +27,7 @@ class sabnzbd (
 
 	$servers.each |$s| {
 		validate_re($s[host], ['(((?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)'])
+		validate_integer($s[connections])
 		validate_string($s[username])
 		validate_string($s[password])
 		validate_bool($s[enable])
@@ -39,7 +40,6 @@ class sabnzbd (
 	$categories.each |$c| {
 		validate_string($c[name])
 		validate_integer($c[priority])
-		validate_integer($c[pp])
 		validate_string($c[script])
 		validate_string($c[dir])
 	}
