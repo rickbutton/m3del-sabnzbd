@@ -1,6 +1,6 @@
 name    'm3del-sabnzbd'
 version '0.1.2'
-source 'https://github.com/nctiggy/m3del-sabnzbd'
+source 'https://github.com/rickbutton/m3del-sabnzbd'
 author 'm3del'
 license 'Apache License, Version 2.0'
 summary 'This module will maintain a full sabnzbd install and config'
