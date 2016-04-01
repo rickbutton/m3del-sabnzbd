@@ -196,27 +196,27 @@ apikey = ""
 
 [servers]
 <% @servers.each do |s| %>
-[[<%= s.host %>]]
-username = <%= s.username %>
-enable = <%= s.enable ? 1 : 0 %>
-name = <%= s1.host %>
+[[<%= s["host"] %>]]
+username = <%= s["username"] %>
+enable = <%= s["enable"] ? 1 : 0 %>
+name = <%= s["host"] %>
 fillserver = 0
-connections = <%= s.connections %>
-ssl = <%= s.ssl ? 1 : 0 %>
-host = <%= s.host %>
+connections = <%= s["connections"] %>
+ssl = <%= s["ssl"] ? 1 : 0 %>
+host = <%= s["host"] %>
 timeout = 120
-password = <%= s.password %>
-optional = <%= s.optional ? 1 : 0 %>
-port = <%= s.port %>
-retention = <%= s.retention %>
+password = <%= s["password"] %>
+optional = <%= s["optional"] ? 1 : 0 %>
+port = <%= s["port"] %>
+retention = <%= s["retention"] %>
 <% end %>
 
 [categories]
 <% @categories.each do |c| %>
-[[<%= c.name %>]]
-priority = <%= c.priority %>
-pp = <%= c.pp %>
-name = <%= c.name %>
-script = <%= c.script || "None" %>
-dir = <%= c.dir %>
+[[<%= c["name"] %>]]
+priority = <%= c["priority"] %>
+pp = <%= c["pp"] %>
+name = <%= c["name"] %>
+script = <%= c["script"] || "None" %>
+dir = <%= c["dir"] %>
 <% end %>
