@@ -3,7 +3,7 @@ class sabnzbd::config inherits sabnzbd {
     file { 'sabnzbd.ini':
       path => "/home/${user_name}/.sabnzbd/sabnzbd.ini",
       ensure => file,
-      mode => 0644,
+      mode => '0644',
       owner => $user_name,
       group => $user_name,
       content => template('sabnzbd/sabnzbd.ini.erb'),
@@ -13,7 +13,7 @@ class sabnzbd::config inherits sabnzbd {
     file { 'sabnzbdplus':
       path => '/etc/default/sabnzbdplus',
       ensure => file,
-      mode => 0644,
+      mode => '0644',
       owner => 'root',
       group => 'root',
       content => template('sabnzbd/sabnzbdplus.erb'),
@@ -21,7 +21,7 @@ class sabnzbd::config inherits sabnzbd {
 	
     file { "/home/${user_name}/.sabnzbd":
       ensure => directory,
-      mode => 0755,
+      mode => '0755',
       owner => $user_name,
       group => $user_name,
   	  require => File["/home/${user_name}"],
@@ -29,7 +29,7 @@ class sabnzbd::config inherits sabnzbd {
 	
     file { "/home/${user_name}":
       ensure => directory,
-      mode => 0755,
+      mode => '0755',
       owner => $user_name,
       group => $user_name,
 	  require => User[$user_name]
