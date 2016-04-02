@@ -34,6 +34,7 @@ class sabnzbd (
 		validate_bool($s[ssl])
 		validate_bool($s[optional])
 		validate_integer($s[port])
+		validate_integer($s[priority])
 		validate_integer($s[retention])
 	}
 
