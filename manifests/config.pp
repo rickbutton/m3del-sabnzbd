@@ -34,11 +34,16 @@ class sabnzbd::config inherits sabnzbd {
       group => $user_name,
 	  require => User[$user_name]
     }
-
-	user { "${user_name}":
-		name => $user_name,
-		ensure => present,
-		home => "/home/${user_name}",
-	}
+    
+    group { 'media':
+        gid => 1002,
+    }
+    user { "${user_name}":
+        ensure => present,
+        groups => ["${user_name}", 'media'],
+        password => '*',
+        home => "/home/${user_name}",
+        require => Group['media'],
+    }
 
 }
